@@ -18,7 +18,7 @@ const Detail = () => {
             <div className="grid grid-cols-2 gap-5">
                 <div>
                     {data?.productGroup.images.map((item, i) => (
-                        <Image src={"https://fsfsdfsdfsdfsf.shop.mysharefox.com" + item.link} alt={data.productGroup.name.en} width={500} height={500} className="w-full" />
+                        <Image src={"https://fsfsdfsdfsdfsf.shop.mysharefox.com" + item.link} alt={data.productGroup.name.en} width={500} height={500} className="w-full" key={i} />
                     ))}
                 </div>
                 <div>
